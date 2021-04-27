@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario Mail</title>
+</head>
+
+<body>
+    <h1>Envío de e-mails</h1>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h2>Ingrese la dirección de correo electónico</h2>
+            <hr>
+            <form action="/set-correo" method="post" autocomplete="off">
+                <div>
+                    <label for="nombre">Mail</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="arstesttechnica@gmail.com">
+                </div>
+               
+                <!-- <div>
+                    <label for="url">URL</label>
+                    <input type="text" id="url" name="url">
+                </div> -->
+                <button class="btn btn-success mt-3">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

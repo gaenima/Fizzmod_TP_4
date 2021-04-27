@@ -1,0 +1,20 @@
+extends layout
+
+block info
+    h1="Listado de productos"
+    if 1==1
+        div(class="table-responsive")
+            table(class="table table-hover")
+                tr(style="color: rgb(237, 198, 97);")
+                    th="Nombre"
+                    th="Precio"
+                    th="Descripción"
+                    th="Foto"
+                each persona in personas                
+                tr
+                    td=persona.nombre
+                    td=persona.apellido
+                    td=persona.edad    
+           
+    else
+        h3(class="alert alert-warning")="No hay productos en la lista."

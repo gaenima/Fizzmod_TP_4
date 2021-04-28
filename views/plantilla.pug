@@ -1,20 +1,22 @@
 extends layout
 
 block info
-    h1="Listado de productos"
-    if 1==1
+    h1="Product´s list"
+    if products.length > 0
         div(class="table-responsive")
             table(class="table table-hover")
                 tr(style="color: rgb(237, 198, 97);")
-                    th="Nombre"
-                    th="Precio"
-                    th="Descripción"
-                    th="Foto"
-                each persona in personas                
-                tr
-                    td=persona.nombre
-                    td=persona.apellido
-                    td=persona.edad    
-           
+                    th="Name"
+                    th="Price"
+                    th="Description"
+                    th="Picture"
+                each prod in products                
+                    tr
+                        td=prod.name
+                        td='$ ' + prod.price
+                        td=prod.description 
+                        th
+                            img(src=prod.photo width='60' )  
+            a(href='/' class='btn btn-success mt-3') Back
     else
-        h3(class="alert alert-warning")="No hay productos en la lista."
+        h3(class="alert alert-warning")="No hay productos en la lista. Sorry, empty list."

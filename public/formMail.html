@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,25 +10,21 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/styles.css">
-    <title>Formulario Mail</title>
+    <title>Form - Mail</title>
 </head>
 
 <body>
-    <h1>Envío de e-mails</h1>
+    <h1>Sending eMails</h1>
     <div class="container mt-3">
         <div class="jumbotron">
-            <h2>Ingrese la dirección de correo electónico</h2>
+            <h2>Inser an eMail</h2>
             <hr>
             <form action="/set-correo" method="post" autocomplete="off">
                 <div>
-                    <label for="nombre">Mail</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="arstesttechnica@gmail.com">
+                    <label for="email">Insert an eMail</label>
+                    <input type="email" id="email" name="email" placeholder="arstesttechnica@gmail.com">
                 </div>
-               
-                <!-- <div>
-                    <label for="url">URL</label>
-                    <input type="text" id="url" name="url">
-                </div> -->
+
                 <button class="btn btn-success mt-3">Enviar</button>
             </form>
         </div>

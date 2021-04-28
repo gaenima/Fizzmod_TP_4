@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +9,38 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/styles.css">
-    <title>Formulario de productos</title>
+    <title>Products's form</title>
 </head>
 <body>
-    <h1>Form products</h1>
+    
     <div class="container mt-3">
         <div class="jumbotron">
-            <h2>Ingrese un nuevo producto</h2>
+            <h2>Insert new product</h2>
             <hr>
             <form action="/ingreso" method="post" autocomplete="off">
                <div>
-                   <label for="nombre">Nombre</label>
-                   <input type="text" id="nombre" name="nombre">
+                   <label for="nombre">Name</label>
+                   <input type="text" id="nombre" name="name">
                </div>
                 <div>
-                    <label for="precio">Precio</label>
-                    <input type="text" id="precio" name="precio">
+                    <label for="precio">Price</label>
+                    <input type="text" id="precio" name="price">
                 </div>
                 <div>
-                    <label for="descripcion">Descripción</label>
-                    <input type="text" id="descripcion" name="descripcion">
+                    <label for="descripcion">Description</label>
+                    <input type="text" id="descripcion" name="description">
                 </div>
                 <div>
-                    <label for="url">URL</label>
-                    <input type="text" id="url" name="url">
+                    <label for="url">Link (URL)</label>
+                    <input type="text" id="url" name="photo">
                 </div>
-                <button class="btn btn-success mt-3">Enviar</button>
+                <button class="btn btn-success mt-3">Save</button>
+               
+                <a href="listar" class="btn btn-success mt-3">All products</a>
             </form>
+
         </div>
     </div>
-    <a href="formMail.html">form mail</a>
+   
 </body>
 </html>
